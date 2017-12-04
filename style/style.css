@@ -1,0 +1,161 @@
+.container {
+    margin-top: 50px;
+}
+
+ul {
+    padding: 0px;
+}
+
+.list-group-item:first-child {
+    background-color: #e2e0e6;
+}
+
+.list-group-item:not(:first-child) {
+    -webkit-animation: fadeinout 0.8s linear forwards;
+    animation: fadeinout 0.8s linear forwards;
+}
+
+
+.list-group-item {
+    border: 1px solid #caa0a0 !important;
+}
+
+.showModal {
+    cursor: pointer;
+}
+
+.list-group-item span:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.data-body {
+    min-height: 150px!important;
+    text-align: center;
+}
+
+.data-body div {
+    margin-top: 15px;
+}
+
+.content-body {
+    padding-top: 30px;
+}
+
+.content-body-match {
+    padding-top: 30px;
+    min-width: 280px;
+}
+
+.queueTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c16464;
+}
+
+.custom-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+}
+
+.custom-modal-content {
+    height: auto;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    max-width: 50%;
+    -webkit-box-shadow: -1px 1px 5px 6px rgba(202, 160, 160, 0.38);
+    -moz-box-shadow: -1px 1px 5px 6px rgba(202, 160, 160, 0.38);
+    box-shadow: -1px 1px 5px 6px rgba(202, 160, 160, 0.38);
+}
+
+.custom-modal-content span {
+    display: inline-block;
+}
+
+.custom-close {
+    float: right;
+    font-size: 20px;
+    margin: 10px 18px 20px 0;
+    border: 2px solid lightsteelblue;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+
+.custom-modal .title {
+    border-right: 1px solid #eee;
+}
+
+.custom-modal .modalTitle {
+    text-align: left;
+    padding-top: 20px;
+    height: 70px;
+    border-bottom: 1px solid #eee;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #9d9d9d;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+.animateList {
+    background: green;
+    -webkit-animation: fadeinout 0.8s linear forwards;
+    animation: fadeinout 0.8s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
